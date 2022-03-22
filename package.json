@@ -1,22 +1,23 @@
 {
-  "name": "remove-accents",
-  "version": "0.4.2",
+  "name": "remove-accents-esm",
+  "version": "0.0.1",
   "description": "Converting the accented characters to their corresponding non-accented ASCII characters.",
   "main": "index.js",
-  "dependencies": {
-
-  },
+  "type": "module",
   "devDependencies": {
-    "tape": "^4.2.2"
+    "tape-es": "^1.2.17"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape-es test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tyxla/remove-accents"
+    "url": "https://github.com/ramiroaisen/remove-accents-esm"
   },
   "keywords": [
+    "esm",
+    "modules",
+    "module",
     "accent",
     "accents",
     "remove",
@@ -37,12 +38,13 @@
   "contributors": [
     "tyxla",
     "andreialecu",
-    "Soreine"
+    "Soreine",
+    "ramiroaisen"
   ],
   "bugs": {
-    "url": "https://github.com/tyxla/remove-accents/issues"
+    "url": "https://github.com/ramiroaisen/remove-accents-esm/issues"
   },
-  "homepage": "https://github.com/tyxla/remove-accents",
+  "homepage": "https://github.com/ramiroaisen/remove-accents-esm",
   "license": "MIT",
-  "typings": "./index.d.ts"
+  "types": "./index.d.ts"
 }

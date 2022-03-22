@@ -1,8 +1,6 @@
-interface RemoveAccents {
-  (part: string): string;
-  remove(part: string): string;
-  has(part: string): boolean;
-}
+declare const removeAccents: (source: string) => string;
 
-declare var dm: RemoveAccents;
-export = dm;
+export { removeAccents };
+export default removeAccents;
+
+export const hasAccents: (source: string) => boolean;

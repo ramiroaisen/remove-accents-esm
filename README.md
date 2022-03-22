@@ -1,12 +1,15 @@
+# This is the module version of remove-accents npm package
 # remove-accents
 
 Removes the accents from a string, converting them to their corresponding non-accented ASCII characters.
 
 ```
-npm install remove-accents
+npm install remove-accents-esm
 ```
-
+<!-- 
+TODO: Add our own build status
 [![Build Status](https://travis-ci.org/tyxla/remove-accents.svg)](https://travis-ci.org/tyxla/remove-accents)
+-->
 
 ## About
 
@@ -15,6 +18,7 @@ An easy to use solution for converting all accented characters to their correspo
 ## Syntax
 
 ``` js
+import removeAccents from "remove-accents-esm";
 removeAccents(inputString)
 ```
 
@@ -27,6 +31,8 @@ The string that you wish to remove accents from.
 Call `removeAccents()` by passing the string you wish to remove accents from, and you will get the non-accented string as result.
 
 ``` js
+import removeAccents from "remove-accents-esm";
+
 var input = 'ÀÁÂÃÄÅ';
 var output = removeAccents(input);
 
@@ -37,27 +43,26 @@ console.log(output); // AAAAAA
 
 The exported function also has helper methods.
 
-#### has
+#### hasAccents
 
 Determine if a string has any accented characters.
 
 ``` js
-var accents = require('remove-accents');
-
-console.log(accents.has('ÀÁÂÃÄÅ')); // true
-console.log(accents.has('ABC'));    // false
+import { hasAccents } from "remove-accents-esm";
+ 
+console.log(hasAccents('ÀÁÂÃÄÅ')); // true
+console.log(hasAccents('ABC'));    // false
 ```
 
-#### remove
+#### named export removeAccents
 
-Alias of `removeAccents`.
+Alias of default export.
 
 ``` js
-var accents = require('remove-accents');
+import { removeAccents } = from "remove-accents-esm";
 
-console.log(accents.remove('ÀÁÂÃÄÅ')); // AAAAAA
+console.log(removeAccents('ÀÁÂÃÄÅ')); // AAAAAA
 ```
 
 ## License
-
 MIT
